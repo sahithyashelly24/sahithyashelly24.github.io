@@ -17,6 +17,11 @@
     padding: 2px 16px;
 }
     </style>
+    <script>
+        function toggle(){
+            alert("clicked toggle");
+        }
+    </script>
 </head>
 <body>
     <center>
@@ -24,10 +29,11 @@
         <div class="card">
             <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg" style="width:500px;height:450px">
             <div class="container">
-                <h3>D.Joseph</h3>
+                <h3><span id="personname">D.Joseph</span></h3>
                 <h3>Architect and Engineer</h3>
             </div>
             <div>
+            <button id="btntoggle" onclick="toggle()">Toggle</button>
     </center>            
 </body>
 </html>
